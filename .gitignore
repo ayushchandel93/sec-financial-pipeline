@@ -1,0 +1,19 @@
+# Data — warehouse file too large for GitHub
+data/warehouse.duckdb
+data/raw/company_facts/
+
+# Keep the company list CSV
+!data/raw/tech_companies.csv
+
+# Python
+__pycache__/
+*.pyc
+.env
+
+# dbt
+dbt_project/target/
+dbt_project/dbt_packages/
+logs/
+
+# VS Code
+.vscode/

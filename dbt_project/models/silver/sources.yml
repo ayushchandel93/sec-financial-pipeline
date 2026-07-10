@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: bronze
+    schema: main
+    tables:
+      - name: bronze_financials
+        description: "Raw SEC EDGAR financial facts for tech companies"
+        columns:
+          - name: ticker
+            description: "Stock ticker symbol"
+          - name: metric
+            description: "Financial metric name"
+          - name: value
+            description: "Metric value in USD"
+          - name: period_end
+            description: "End of reporting period"
+          - name: form
+            description: "SEC filing type (10-K or 10-Q)"

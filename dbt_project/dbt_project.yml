@@ -1,0 +1,21 @@
+name: dbt_project
+version: '1.0.0'
+config-version: 2
+
+profile: dbt_project
+
+model-paths: ["models"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  dbt_project:
+    silver:
+      +materialized: view      # silver = views (fast, no storage cost)
+      +schema: silver
+    gold:
+      +materialized: table     # gold = tables (pre-computed, fast reads)
+      +schema: gold
