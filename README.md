@@ -4,6 +4,8 @@ End-to-end data engineering pipeline ingesting SEC EDGAR financial filings for
 30 tech companies, transforming through a dbt + DuckDB medallion architecture,
 and serving a Streamlit analytics dashboard.
 
+<img width="917" height="600" alt="image" src="https://github.com/user-attachments/assets/fad97628-6080-459f-8bfe-2ec443795cb6" />
+
 ## Key Findings
 - NVDA gross margin jumped from 57% → 73% in 2024 driven by AI chip demand
 - MSFT has maintained above-industry gross margins since 2020
