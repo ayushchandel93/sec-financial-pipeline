@@ -4,16 +4,8 @@ End-to-end data engineering pipeline ingesting SEC EDGAR financial filings for
 30 tech companies, transforming through a dbt + DuckDB medallion architecture,
 and serving a Streamlit analytics dashboard.
 
-<img width="917" height="600" alt="image" src="https://github.com/user-attachments/assets/fad97628-6080-459f-8bfe-2ec443795cb6" />
-
-## Key Findings
-- NVDA gross margin jumped from 57% → 73% in 2024 driven by AI chip demand
-- MSFT has maintained above-industry gross margins since 2020
-- AAPL gross margin (~46%) reflects hardware-software mix vs pure software peers
-- Identified duplicate fiscal period reporting in SEC XBRL data — resolved via
-  deduplication on latest filed_date per ticker/metric/period
-
 ## Architecture
+<img width="917" height="600" alt="image" src="https://github.com/user-attachments/assets/fad97628-6080-459f-8bfe-2ec443795cb6" />
 
 ```
 SEC EDGAR API → Python ingestion → DuckDB (bronze)
@@ -91,6 +83,13 @@ python -m streamlit run dashboard/app.py
 - R&D intensity over time
 - Full comparison table with formatting
 
+## Key Findings
+- NVDA gross margin jumped from 57% → 73% in 2024 driven by AI chip demand
+- MSFT has maintained above-industry gross margins since 2020
+- AAPL gross margin (~46%) reflects hardware-software mix vs pure software peers
+- Identified duplicate fiscal period reporting in SEC XBRL data — resolved via
+  deduplication on latest filed_date per ticker/metric/period
+  
 ## Project Structure
 
 ```
