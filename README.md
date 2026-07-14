@@ -71,6 +71,12 @@ cd ..
 python -m streamlit run dashboard/app.py
 ```
 
+## Dashboard
+
+![Dashboard Overview](docs/dashboard_overview.png)
+
+![Dashboard Charts](docs/dashboard_charts.png)
+
 ## Dashboard Features
 - Company selector (multi-select, default: AAPL/MSFT/NVDA/GOOGL/META)
 - Year range slider (2015–2024)
@@ -82,13 +88,15 @@ python -m streamlit run dashboard/app.py
 - Peer revenue comparison (horizontal bar, color = gross margin)
 - R&D intensity over time
 - Full comparison table with formatting
-
+- 
 ## Key Findings
-- NVDA gross margin jumped from 57% → 73% in 2024 driven by AI chip demand
-- MSFT has maintained above-industry gross margins since 2020
-- AAPL gross margin (~46%) reflects hardware-software mix vs pure software peers
-- Identified duplicate fiscal period reporting in SEC XBRL data — resolved via
-  deduplication on latest filed_date per ticker/metric/period
+- NVDA revenue grew +125.8% YoY in 2024 — visible in KPI card
+- NVDA gross margin jumped from 57% → 72.7% in 2024 driven by AI chip demand
+- MSFT gross margin of 69.8% reflects pure software/cloud business model
+- AAPL gross margin (~46.7%) reflects hardware-software mix vs pure software peers
+- GOOGL and META invest 14-20% of revenue in R&D — highest intensity in the group
+- Identified and resolved duplicate fiscal period reporting in SEC XBRL data —
+  deduplication applied at silver layer on latest filed_date per ticker/metric/period
   
 ## Project Structure
 
