@@ -59,4 +59,9 @@ SELECT
     revenue_cagr_3yr,
     revenue_rank
 FROM comparison
+WHERE revenue_bn IS NOT NULL
+QUALIFY ROW_NUMBER() OVER (
+    PARTITION BY ticker, report_year
+    ORDER BY revenue_bn DESC
+) = 1
 ORDER BY revenue_bn DESC
