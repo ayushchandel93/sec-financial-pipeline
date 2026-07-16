@@ -90,7 +90,7 @@ python -m streamlit run dashboard/app.py
 - Full comparison table with formatting
 - 
 ## Key Findings
-- NVDA revenue grew +125.8% YoY in 2024 — visible in KPI card
+- NVDA revenue grew +125.8% YoY in 2024 — visible in the KPI card
 - NVDA gross margin jumped from 57% → 72.7% in 2024 driven by AI chip demand
 - MSFT gross margin of 69.8% reflects pure software/cloud business model
 - AAPL gross margin (~46.7%) reflects hardware-software mix vs pure software peers
